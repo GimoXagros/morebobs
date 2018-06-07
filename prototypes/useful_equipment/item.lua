@@ -1,0 +1,86 @@
+data:extend({
+	{
+		type = "item",
+		name = "uep-craft-assistent",
+		icon = "__morebobs__/graphics/equipment/craft_assistent.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-craft-assistent",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-c[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-artificial-organ",
+		icon = "__morebobs__/graphics/equipment/artificial_organ.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-artificial-organ",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-d[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-portable-logistic-computer",
+		icon = "__morebobs__/graphics/equipment/portable_logistic_computer.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-portable-logistic-computer",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-f[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-additional-toolbelt",
+		icon = "__morebobs__/graphics/icons/additional_toolbelt.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-additional-toolbelt",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-a[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-armor-pocket",
+		icon = "__morebobs__/graphics/icons/armor-pocket.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-armor-pocket",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-b[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-portable-autotrash-computer",
+		icon = "__morebobs__/graphics/equipment/portable-autotrash-computer.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-portable-autotrash-computer",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-g[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+	{
+		type = "item",
+		name = "uep-combet-control-module",
+		icon = "__morebobs__/graphics/equipment/combet-control-module.png",
+		icon_size = 32,
+		placed_as_equipment_result = "uep-combet-control-module",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "equipment",
+		order = "f[armor-pocket]-e[useful-equipment]",
+		stack_size = 5,
+		default_request_amount = 10
+	},
+})

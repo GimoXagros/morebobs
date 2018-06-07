@@ -1,0 +1,34 @@
+{
+  "recipe": [
+		["craft-assistent", "uep-craft-assistent"],
+		["artificial-organ", "uep-artificial-organ"],
+		["portable-logistic-computer", "uep-portable-logistic-computer"],
+		["additional-toolbelt", "uep-additional-toolbelt"],
+		["armor-pocket", "uep-armor-pocket"],
+		["portable-autotrash-computer", "uep-portable-autotrash-computer"],
+		["combet-control-module", "uep-combet-control-module"]
+  ],
+  "technology": [
+		["pocket-equipment",  "uep-pocket-equipment"],
+		["helpful-equipment",  "uep-helpful-equipment"]
+  ],
+  "item": [
+		["craft-assistent", "uep-craft-assistent"],
+		["artificial-organ", "uep-artificial-organ"],
+		["portable-logistic-computer", "uep-portable-logistic-computer"],
+		["additional-toolbelt", "uep-additional-toolbelt"],
+		["armor-pocket", "uep-armor-pocket"],
+		["portable-autotrash-computer", "uep-portable-autotrash-computer"],
+		["combet-control-module", "uep-combet-control-module"]
+	],
+  "equipment": [
+		["craft-assistent", "uep-craft-assistent"],
+		["artificial-organ", "uep-artificial-organ"],
+		["portable-logistic-computer", "uep-portable-logistic-computer"],
+		["additional-toolbelt", "uep-additional-toolbelt"],
+		["armor-pocket", "uep-armor-pocket"],
+		["portable-autotrash-computer", "uep-portable-autotrash-computer"],
+		["combet-control-module", "uep-combet-control-module"]
+  ]  
+}
+

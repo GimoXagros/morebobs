@@ -1,0 +1,11 @@
+if data.raw["item"]["wooden-board"] then data.raw["item"]["wooden-board"].icon = "__morebobs__/graphics/icons/electronics/wooden-board.png" end
+if data.raw["item"]["phenolic-board"] then data.raw["item"]["phenolic-board"].icon = "__morebobs__/graphics/icons/electronics/phenolic-board.png" end
+if data.raw["item"]["fibreglass-board"] then data.raw["item"]["fibreglass-board"].icon = "__morebobs__/graphics/icons/electronics/fibreglass-board.png" end
+if data.raw["item"]["basic-circuit-board"] then data.raw["item"]["basic-circuit-board"].icon = "__morebobs__/graphics/icons/electronics/basic-circuit-board.png" end
+if data.raw["item"]["circuit-board"] then data.raw["item"]["circuit-board"].icon = "__morebobs__/graphics/icons/electronics/circuit-board.png" end
+if data.raw["item"]["superior-circuit-board"] then data.raw["item"]["superior-circuit-board"].icon = "__morebobs__/graphics/icons/electronics/superior-circuit-board.png" end
+if data.raw["item"]["multi-layer-circuit-board"] then data.raw["item"]["multi-layer-circuit-board"].icon = "__morebobs__/graphics/icons/electronics/multi-layer-circuit-board.png" end
+if data.raw["item"]["electronic-circuit"] then data.raw["item"]["electronic-circuit"].icon = "__morebobs__/graphics/icons/electronics/basic-electronic-circuit-board.png" end
+if data.raw["item"]["advanced-circuit"] then data.raw["item"]["advanced-circuit"].icon = "__morebobs__/graphics/icons/electronics/electronic-circuit-board.png" end
+if data.raw["item"]["processing-unit"] then data.raw["item"]["processing-unit"].icon = "__morebobs__/graphics/icons/electronics/electronic-logic-board.png" end
+if data.raw["item"]["advanced-processing-unit"] then data.raw["item"]["advanced-processing-unit"].icon = "__morebobs__/graphics/icons/electronics/electronic-processing-board.png" end

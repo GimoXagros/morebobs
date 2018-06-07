@@ -1,0 +1,395 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.16.47
+Date: 2018-06-XX
+  Changes:
+    - Updated mod (Flow control for Bob's pipes - Bio Industries compatibility improved)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.46
+Date: 2018-06-01
+  Changes:
+    - Updated mod (More Shinybobs! - Bio Industries compatibility improved)
+    - Updated mod (Bio Industries tweak - Bio Industries compatibility improved)
+    - Updated mod (TUONELA - Wood belts option)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.45
+Date: 2018-05-28
+  Changes:
+    - Updated mod (Bio Industries tweak - Compatibility improved)
+    - Updated mod (More Shinybobs! - Bio Industries compatibility improved)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.44
+Date: 2018-05-27
+  Changes:
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Improved compatibility for Correct plate balance)
+    - Updated mod (Tanks! and now also for Bob!! - Graphics enhancements)
+    - Updated mod (Tanks! and now also for Bob!! - Bob's Character classes supported)
+  Bugfixes:
+    - Fixed runtime the game error (Tanks! and now also for Bob!!)
+    - Fixed launch the game error (TUONELA - Geothermal)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.43
+Date: 2018-05-21
+  Bugfixes:
+    - Fixed item mining (Tanks! and now also for Bob!! - tank-assembling-machine)
+    - Fixed launch the game error (More Shinybobs! - Research queue)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.42
+Date: 2018-05-20
+  Changes:
+    - Updated mod (More Shinybobs! - Bob's Power armor fix)
+    - Corrected incorrect information. 
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.41
+Date: 2018-05-20
+  Changes:
+    - Updated mod (Bio Industries tweak - Compatibility improved)
+    - Updated mod (More Shinybobs! - Endgame Combat compatibility improved)
+    - Updated mod (More Shinybobs! - Bio Industries compatibility improved)
+    - Updated mod (bobsDeadlockStackCrate - BobExtended kaorhil's upgrade for 0.16(Thx Muki!))
+  Bugfixes:
+    - Fixed launch the game error (Tanks! and now also for Bob!! - AAI Programmable Vehicles)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.40
+Date: 2018-05-19
+  Changes:
+    - Updated mod (Bio Industries tweak - Terraformer fix)
+    - Updated mod (Tanks! and now also for Bob!! - New item: Repair capsule)
+    - Updated mod (Tanks! and now also for Bob!! - Compatibility improved)
+    - Updated mod (More Shinybobs! - Bio Industries order)
+    - Updated mod (Useful equipment+ & Tesla Turret - Tesla turret sound change)
+  Bugfixes:
+    - Fixed runtime the game error (Tanks! and now also for Bob!! - AAI Programmable Vehicles)
+    - Fixed launch the game error (Bio Industries tweak - name error)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.39
+Date: 2018-05-14
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - More Inserters + Menu Cleaner)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.38
+Date: 2018-05-13
+  Changes:
+    - Updated mod (TUONELA - More Inserters + Menu Cleaner)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.37
+Date: 2018-05-13
+  Changes:
+    - Updated mod (More Shinybobs! - Rubber belt and Ammo loader+)
+    - Updated mod (TUONELA - AAI & Rubber belt)
+    - Updated mod (TUONELA - More Inserters + Menu Cleaner)
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - raven)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.36
+Date: 2018-05-11
+  Bugfixes:
+    - Fixed launch the game error (Weapon Sounds Redone for bob's weapons - setting option)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.35
+Date: 2018-05-11
+  Changes:
+    - Updated mod (Tanks! and now also for Bob!! - The balance of the tank has been adjusted)
+    - Updated mod (Tanks! and now also for Bob!! - Add vehicle grid)
+    - Updated mod (Bio Industries tweak - Temporary update)
+    - Updated mod (Weapon Sounds Redone for bob's weapons - Bob's Turret Supported)
+    - Updated mod (More Shinybobs! - Ammo loader+ and Hovercraft sorted)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.34
+Date: 2018-05-02
+  Bugfixes:
+    - Fixed launch the game error (More Shinybobs! - gfx[Bio Industries])
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.33
+Date: 2018-05-01
+  Bugfixes:
+    - Temporarily rolls back the feature because it causes problems when used with Bob's Character classes.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.32
+Date: 2018-05-01
+  Changes:
+    - Updated mod (Tanks! and now also for Bob!! - The balance of the tank has been adjusted)
+  Bugfixes:
+    - Fixed locale (Tanks! and now also for Bob!!)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.31
+Date: 2018-04-30
+  Changes:
+    - Updated mod (Useful equipment+ & Tesla Turret - Compatibility improved)
+    - Updated mod (Useful equipment+ & Tesla Turret - Equipment added)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.30
+Date: 2018-04-27
+  Changes:
+    - Updated mod (More Shinybobs! - Order[Bio Industries])
+  Bugfixes:
+    - Fixed launch the game error (Bio Industries tweak - updated mod)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.29
+Date: 2018-04-25
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - warehouse)
+    - Fixed Research queue Problems
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.28
+Date: 2018-04-19
+  Changes:
+    - Updated mod (More Shinybobs! - Order[Bobs circuit])
+    - Updated mod (More Shinybobs! - Angel gem ores locale)
+    - Updated mod (bobsDeadlockStackCrate - Angel&Bob)
+  Bugfixes:
+    - Fixed launch the game error (Bio Industries tweak - stone-crushed)
+    - Fixed launch the game error (Flow control for Bob's pipes - item group)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.27
+Date: 2018-04-18
+  Changes:
+    - Updated mod (More Shinybobs! - Order[Endgame Combat])
+  Bugfixes:
+    - Fixed launch the game error (Tesla Turret)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.26
+Date: 2018-04-17
+  Changes:
+    - Updated mod (More Shinybobs! - Order[Angel&Bob])
+    - Updated mod (More Shinybobs! - Warfare: Bob's armor GFX)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.25
+Date: 2018-04-16
+  Changes:
+    - Updated mod (More Shinybobs! - Deep core mining)
+    - Updated mod (More Shinybobs! - KS Power)
+    - Updated mod (More Shinybobs! - Angel's Petro Chemical Processing)
+    - Updated mod (TUONELA - Create Mint Option)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.24
+Date: 2018-04-16
+  Changes:
+    - Updated mod (More Shinybobs! - Improved compatibility(size optimization))
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Ores: Angels, Bobs, UP, Clowns)
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Bob's gearbearing)
+  Bugfixes:
+    - Fixed launch the game error (Tesla Turret)
+    - Fixed launch the game error (TUONELA - wall error)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.23
+Date: 2018-04-15
+  Changes:
+    - Updated mod (More Shinybobs! - Improved compatibility(size optimization))
+    - Updated mod (More Shinybobs! - Improved compatibility(colored bars))
+  Bugfixes:
+    - Fixed sandbox mode error (Useful equipment)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.22
+Date: 2018-04-13
+  Changes:
+    - Updated mod (More Shinybobs! - Minor update(order fix))
+    - Updated mod (More Shinybobs! - Minor update(Use colored bars: Required ShinyBobGFX mod))
+    - Updated mod (Bio Industries tweak - Bobgreenhouse)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.21
+Date: 2018-04-12
+  Changes:
+    - Updated mod (More Shinybobs! - Improved compatibility[modules])
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Improved compatibility for ShinybobGFX)
+  Bugfixes:
+    - Fixed locale (Tanks! and now also for Bob!! - item-group-name)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.20
+Date: 2018-04-12
+  Changes:
+    - Updated mod (More Shinybobs! - Improved compatibility)
+    - Updated mod (More Shinybobs! - Add a variety of graphics and options)
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Improved compatibility for Circuits)
+  Bugfixes:
+    - Fixed icon error (More Shinybobs! - Bio Industries)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.19
+Date: 2018-04-06
+  Changes:
+    - Updated mod (More Shinybobs! - Improved compatibility)
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - AAI Industries)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.18
+Date: 2018-04-05
+  Changes:
+    - Updated mod (Flow control for Bob's pipes - Improved compatibility)
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - Improved compatibility)
+    - Updated mod (TUONELA - Improved compatibility)
+    - Added More Shinybobs!
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.17
+Date: 2018-03-29
+  Changes:
+    - Updated mod (Name changed: Deadlock's Stacking & Crating for Bob's materials)
+    - Updated mod (Deadlock's Stacking & Crating for Bob's materials - More recipes)
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - Deadlock's mod)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.16
+Date: 2018-03-28
+  Changes:
+    - Updated mod (TUONELA - Warehouse recipe and technology)
+    - Updated mod (TUONELA - Graphics of the Mint changed)
+    - Updated mod (Flow control for Wooden pipes - Graphic enhancements)
+    - Updated mod (Tanks! and now also for Bob!! - The script has been cleaned up.)
+    - Added Deadlock's Stacking Beltboxes for Bob's materials (Beta)
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - tweaks[Warehouse])
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.15
+Date: 2018-03-19
+  Changes:
+    - Updated mod (TUONELA - Steel-walln for Fectorio Extended)
+    - Updated mod (TUONELA - Bob Circuit GFX for DeadlockStacking)
+  Bugfixes:
+    - Fixed launch the game error (Flow control for Wooden pipes)
+    - Fixed launch the game error (TUONELA - tweaks[Steel-wall])
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.14
+Date: 2018-03-19
+  Bugfixes:
+    - Fixed launch the game error (Flow control)
+    - Fixed launch the game error (TUONELA - tweaks)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.13
+Date: 2018-03-19
+  Changes:
+    - Updated mod (Bio Industries tweak - Recipe name error)
+    - Updated mod (Bio Industries tweak - lighted-bi-huge-wooden-pole[Reqired Lighted Poles Plus])
+    - Updated mod (TUONELA - Bobs Recipe name error)
+    - Updated mod (TUONELA - lighted-aai-pole[Reqired Lighted Poles Plus])
+  Bugfixes:
+    - Fixed launch the game error (steel-walln)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.12
+Date: 2018-03-17
+  Bugfixes:
+    - Update translation errors
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.11
+Date: 2018-03-17
+  Changes:
+    - Added Tanks! and now also for Bob!! (Beta)
+    - Updated mod (Bio Industries tweak - Recipe name error)
+    - Updated mod (TUONELA - Bobs and AAI walls teawk)
+    - Updated mod (TUONELA - Circuit icons change)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.10
+Date: 2018-03-14
+  Changes:
+    - Updated mod (TUONELA - Tech icons size, Robot Mining Site)
+    - Updated mod (Bio Industries tweak - lighted huge wooden pole)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.9
+Date: 2018-03-11
+  Bugfixes:
+    - Fixed script error (TUONELA - Warehouse)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.8
+Date: 2018-03-11
+  Changes:
+    - More dependency updates
+    - Improved script compatibility
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.7
+Date: 2018-03-06
+  Changes:
+    - Optimized library
+    - Updated Weapon Sounds Redone (Bobmod guns)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.6
+Date: 2018-03-06
+  Changes:
+    - Added Weapon Sounds Redone
+    - Updated Flow control for Bob's pipes (High resolution graphic)
+  Bugfixes:
+    - Fixed launch the game error (bobmods)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.5
+Date: 2018-03-03
+  Bugfixes:
+    - Fixed launch the game error
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.4
+Date: 2018-03-03
+  Bugfixes:
+    - Fixed launch the game error
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.3
+Date: 2018-03-03
+  Changes:
+    - Added Useful equipment
+    - Added Tesla Turret
+    - Updated Xagros's TUONELA Core
+    - Updated Reactor Interface
+    - Updated Flow control for Bob's pipes
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.2
+Date: 2018-03-02
+  Changes:
+    - Added Reactor Interface
+    - Added Bob's Mods : Alternate Textures
+    - Updated Xagros's TUONELA Core
+  Bugfixes:
+    - Fixed launch the game error (bi-wooden-fence)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.1
+Date: 2018-03-01
+  Changes:
+    - Added Xagros's TUONELA Core
+    - Added Flow control for Wooden pipes
+  Bugfixes:
+    - Fixed launch the game error (shinycoverpictures)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.16.0
+Date: 2018-02-18
+  Changes:
+    - Initial release
