@@ -105,6 +105,10 @@ if mods["Bio_Industries"] then
 		data.raw["recipe"]["bi_recipe_crushed_stone"].subgroup = "bio-coal-products"
 		data.raw["recipe"]["bi_recipe_crushed_stone"].order = "e[bio-coal-products]-a[bi-stone-raw]"
 	end
+	if data.raw["recipe"]["bi_recipe_stone_brick"] then
+		data.raw["recipe"]["bi_recipe_stone_brick"].subgroup = "bio-coal-products"
+		data.raw["recipe"]["bi_recipe_stone_brick"].order = "e[bio-coal-products]-b[bi-stone-brick]"
+	end
 	
 	--bio-raw-material
 	if data.raw["recipe"]["bi_recipe_biomass_1"] then
@@ -279,6 +283,18 @@ if mods["Bio_Industries"] then
 		data.raw["recipe"]["bi_recipe_logs_mk4"].subgroup = "bio-raw-wood"
 		data.raw["recipe"]["bi_recipe_logs_mk4"].order = "a[bi-wood]-d[bi-wood]"
 	end
+	if data.raw["recipe"]["bi_recipe_resin_wood"] then
+		data.raw["recipe"]["bi_recipe_resin_wood"].subgroup = "bio-raw-wood"
+		data.raw["recipe"]["bi_recipe_resin_wood"].order = "b[bi-wood-intermediate]-a[bi-wood]"
+	end
+	if data.raw["recipe"]["bi_recipe_resin_pulp"] then
+		data.raw["recipe"]["bi_recipe_resin_pulp"].subgroup = "bio-raw-wood"
+		data.raw["recipe"]["bi_recipe_resin_pulp"].order = "b[bi-wood-intermediate]-b[bi-wood]"
+	end
+	if data.raw["recipe"]["bi_recipe_press_wood"] then
+		data.raw["recipe"]["bi_recipe_press_wood"].subgroup = "bio-raw-wood"
+		data.raw["recipe"]["bi_recipe_press_wood"].order = "b[bi-wood-intermediate]-c[bi-wood]"
+	end
 
 	--bio-terraforming
 	if data.raw["recipe"]["bi_recipe_arboretum_r1"] then
@@ -365,13 +381,13 @@ if mods["Bio_Industries"] then
 	end
 	
 	--bio-building
-	if data.raw["recipe"]["bi-cokery"] then
-		data.raw["recipe"]["bi-cokery"].subgroup = "bio-building"
-		data.raw["recipe"]["bi-cokery"].order = "a[bio-building]-a[bi-cokery]"
+	if data.raw["recipe"]["bi_recipe_cokery"] then
+		data.raw["recipe"]["bi_recipe_cokery"].subgroup = "bio-building"
+		data.raw["recipe"]["bi_recipe_cokery"].order = "a[bio-building]-a[bi-cokery]"
 	end
-	if data.raw["recipe"]["bi-stone-crusher"] then
-		data.raw["recipe"]["bi-stone-crusher"].subgroup = "bio-building"
-		data.raw["recipe"]["bi-stone-crusher"].order = "a[bio-building]-b[bi-crusher]"
+	if data.raw["recipe"]["bi_recipe_stone_crusher"] then
+		data.raw["recipe"]["bi_recipe_stone_crusher"].subgroup = "bio-building"
+		data.raw["recipe"]["bi_recipe_stone_crusher"].order = "a[bio-building]-b[bi-crusher]"
 	end
 	if data.raw["recipe"]["bi_recipe_bioreactor"] then
 		data.raw["recipe"]["bi_recipe_bioreactor"].subgroup = "bio-building"
@@ -399,25 +415,25 @@ if mods["Bio_Industries"] then
 		data.raw["recipe"]["bi_recipe_burner_mining_drill_disassemble"].subgroup = "bio-disassemble"
 		data.raw["recipe"]["bi_recipe_burner_mining_drill_disassemble"].order = "a[bio-disassemble]-a[bio-disassemble]"
 	end
+	if data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"] then
+		data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"].subgroup = "bio-disassemble"
+		data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"].order = "a[bio-disassemble]-b[bio-disassemble]"
+	end
 	if data.raw["recipe"]["bi_recipe_stone_furnace_disassemble"] then
 		data.raw["recipe"]["bi_recipe_stone_furnace_disassemble"].subgroup = "bio-disassemble"
-		data.raw["recipe"]["bi_recipe_stone_furnace_disassemble"].order = "a[bio-disassemble]-b[bio-disassemble]"
+		data.raw["recipe"]["bi_recipe_stone_furnace_disassemble"].order = "a[bio-disassemble]-c[bio-disassemble]"
 	end
 	if data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"] then
 		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].subgroup = "bio-disassemble"
-		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].order = "a[bio-disassemble]-c[bio-disassemble]"
+		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].order = "a[bio-disassemble]-d[bio-disassemble]"
 	end
 	if data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"] then
 		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].subgroup = "bio-disassemble"
-		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].order = "a[bio-disassemble]-c[bio-disassemble]"
+		data.raw["recipe"]["bi_recipe_steel_furnace_disassemble"].order = "a[bio-disassemble]-e[bio-disassemble]"
 	end
 	if data.raw["recipe"]["bi_recipe_basic_pumpjack_disassemble"] then
 		data.raw["recipe"]["bi_recipe_basic_pumpjack_disassemble"].subgroup = "bio-disassemble"
-		data.raw["recipe"]["bi_recipe_basic_pumpjack_disassemble"].order = "a[bio-disassemble]-d[bio-disassemble]"
-	end
-	if data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"] then
-		data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"].subgroup = "bio-disassemble"
-		data.raw["recipe"]["bi_recipe_long_handed_inserter_disassemble"].order = "a[bio-disassemble]-e[bio-disassemble]"
+		data.raw["recipe"]["bi_recipe_basic_pumpjack_disassemble"].order = "a[bio-disassemble]-f[bio-disassemble]"
 	end
 
 	--Bobs
@@ -478,5 +494,21 @@ else
 	if data.raw["recipe"]["filter-air"] then
 		data.raw["recipe"]["filter-air"].subgroup = "intermediate-product"
 		data.raw["recipe"]["filter-air"].order = "t[airclear]-d[filter-air]"
+	end
+end
+
+	--chest
+if data.raw["item-subgroup"]["shinychests1"] then
+	if data.raw["item"]["bi-large-wooden-chest"] then
+		data.raw["item"]["bi-large-wooden-chest"].subgroup = "shinychests1"
+		data.raw["item"]["bi-large-wooden-chest"].order = "a1-a[bi-large-wooden-chest]"
+	end
+	if data.raw["item"]["bi-huge-wooden-chest"] then
+		data.raw["item"]["bi-huge-wooden-chest"].subgroup = "shinychests1"
+		data.raw["item"]["bi-huge-wooden-chest"].order = "a1-b[bi-huge-wooden-chest]"
+	end
+	if data.raw["item"]["bi-giga-wooden-chest"] then
+		data.raw["item"]["bi-giga-wooden-chest"].subgroup = "shinychests1"
+		data.raw["item"]["bi-giga-wooden-chest"].order = "a1-c[bi-giga-wooden-chest]"
 	end
 end

@@ -98,9 +98,7 @@ function teleportEffect(entity)
 	-- body
 	-- game.players[1].print("pre-teleport-effect")
 	local entityPlayer = entity.surface.find_entity('player', entity.position)
-	local entityBobClassPlayer1 = entity.surface.find_entity('bob-player-miner', entity.position)
-	local entityBobClassPlayer2 = entity.surface.find_entity('bob-player-fighter', entity.position)
-	local entityBobClassPlayer3 = entity.surface.find_entity('bob-player-builder', entity.position)
+
 	if entityPlayer ~= nil then
 		-- entityPlayer = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
 		for c, tplayer in pairs(game.players) do
@@ -142,125 +140,135 @@ function teleportEffect(entity)
 			end
 		end
 	end
-	if entityBobClassPlayer1 ~= nil then
-		-- entityBobClassPlayer1 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
-		for c, tplayer in pairs(game.players) do
-			-- game.players[1].print("Looking x".. entityBobClassPlayer1.position.x .." y ".. entityBobClassPlayer1.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
-			if tplayer.position.x == entityBobClassPlayer1.position.x and tplayer.position.y == entityBobClassPlayer1.position.y then
-				player = tplayer
-				-- player.print("found")
-			end
-		end
-		local temp = "tank_"..player.name
-		tank = global[temp]
-		if tank ~= nil then
-			if tank.valid ~= false then
-				-- player.print("Teleporting to tank")
-				player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer1.position.x,entityBobClassPlayer1.position.y}}
-				-- player.teleport(tank.position)
-				tank.set_driver(player.character)
-				tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
-				-- tankOpenGui(player)
-			else
-				global[temp] = nil
-				player.insert{name="tank-recall-token", count=1}
-				player.print({"tanks-notify.failed-teleport1"})
-			end
-		else
-			player.insert{name="tank-recall-token", count=1}
-			player.print({"tanks-notify.failed-teleport1"})
-		end
-	else
-		-- game.players[1].print("Looking in tanks")
-		for c, tplayer in pairs(game.players) do      
-			if tplayer.vehicle ~= nil then
-				-- game.players[1].print("Looking found player in tank")
-				if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
-					player = tplayer
+
+	--bobsclass
+	if bobmods then
+		if bobmods.classes then
+			local entityBobClassPlayer1 = entity.surface.find_entity('bob-player-miner', entity.position)
+			local entityBobClassPlayer2 = entity.surface.find_entity('bob-player-fighter', entity.position)
+			local entityBobClassPlayer3 = entity.surface.find_entity('bob-player-builder', entity.position)
+			
+			if entityBobClassPlayer1 ~= nil then
+				-- entityBobClassPlayer1 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
+				for c, tplayer in pairs(game.players) do
+					-- game.players[1].print("Looking x".. entityBobClassPlayer1.position.x .." y ".. entityBobClassPlayer1.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
+					if tplayer.position.x == entityBobClassPlayer1.position.x and tplayer.position.y == entityBobClassPlayer1.position.y then
+						player = tplayer
+						-- player.print("found")
+					end
+				end
+				local temp = "tank_"..player.name
+				tank = global[temp]
+				if tank ~= nil then
+					if tank.valid ~= false then
+						-- player.print("Teleporting to tank")
+						player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer1.position.x,entityBobClassPlayer1.position.y}}
+						-- player.teleport(tank.position)
+						tank.set_driver(player.character)
+						tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
+						-- tankOpenGui(player)
+					else
+						global[temp] = nil
+						player.insert{name="tank-recall-token", count=1}
+						player.print({"tanks-notify.failed-teleport1"})
+					end
+				else
 					player.insert{name="tank-recall-token", count=1}
-					player.print({"tanks-notify.failed-teleport2"})
+					player.print({"tanks-notify.failed-teleport1"})
+				end
+			else
+				-- game.players[1].print("Looking in tanks")
+				for c, tplayer in pairs(game.players) do      
+					if tplayer.vehicle ~= nil then
+						-- game.players[1].print("Looking found player in tank")
+						if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
+							player = tplayer
+							player.insert{name="tank-recall-token", count=1}
+							player.print({"tanks-notify.failed-teleport2"})
+						end
+					end
 				end
 			end
-		end
-	end
-	if entityBobClassPlayer2 ~= nil then
-		-- entityBobClassPlayer2 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
-		for c, tplayer in pairs(game.players) do
-			-- game.players[1].print("Looking x".. entityBobClassPlayer2.position.x .." y ".. entityBobClassPlayer2.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
-			if tplayer.position.x == entityBobClassPlayer2.position.x and tplayer.position.y == entityBobClassPlayer2.position.y then
-				player = tplayer
-				-- player.print("found")
-			end
-		end
-		local temp = "tank_"..player.name
-		tank = global[temp]
-		if tank ~= nil then
-			if tank.valid ~= false then
-				-- player.print("Teleporting to tank")
-				player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer2.position.x,entityBobClassPlayer2.position.y}}
-				-- player.teleport(tank.position)
-				tank.set_driver(player.character)
-				tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
-				-- tankOpenGui(player)
-			else
-				global[temp] = nil
-				player.insert{name="tank-recall-token", count=1}
-				player.print({"tanks-notify.failed-teleport1"})
-			end
-		else
-			player.insert{name="tank-recall-token", count=1}
-			player.print({"tanks-notify.failed-teleport1"})
-		end
-	else
-		-- game.players[1].print("Looking in tanks")
-		for c, tplayer in pairs(game.players) do      
-			if tplayer.vehicle ~= nil then
-				-- game.players[1].print("Looking found player in tank")
-				if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
-					player = tplayer
+			if entityBobClassPlayer2 ~= nil then
+				-- entityBobClassPlayer2 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
+				for c, tplayer in pairs(game.players) do
+					-- game.players[1].print("Looking x".. entityBobClassPlayer2.position.x .." y ".. entityBobClassPlayer2.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
+					if tplayer.position.x == entityBobClassPlayer2.position.x and tplayer.position.y == entityBobClassPlayer2.position.y then
+						player = tplayer
+						-- player.print("found")
+					end
+				end
+				local temp = "tank_"..player.name
+				tank = global[temp]
+				if tank ~= nil then
+					if tank.valid ~= false then
+						-- player.print("Teleporting to tank")
+						player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer2.position.x,entityBobClassPlayer2.position.y}}
+						-- player.teleport(tank.position)
+						tank.set_driver(player.character)
+						tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
+						-- tankOpenGui(player)
+					else
+						global[temp] = nil
+						player.insert{name="tank-recall-token", count=1}
+						player.print({"tanks-notify.failed-teleport1"})
+					end
+				else
 					player.insert{name="tank-recall-token", count=1}
-					player.print({"tanks-notify.failed-teleport2"})
+					player.print({"tanks-notify.failed-teleport1"})
+				end
+			else
+				-- game.players[1].print("Looking in tanks")
+				for c, tplayer in pairs(game.players) do      
+					if tplayer.vehicle ~= nil then
+						-- game.players[1].print("Looking found player in tank")
+						if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
+							player = tplayer
+							player.insert{name="tank-recall-token", count=1}
+							player.print({"tanks-notify.failed-teleport2"})
+						end
+					end
 				end
 			end
-		end
-	end
-	if entityBobClassPlayer3 ~= nil then
-		-- entityBobClassPlayer3 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
-		for c, tplayer in pairs(game.players) do
-			-- game.players[1].print("Looking x".. entityBobClassPlayer3.position.x .." y ".. entityBobClassPlayer3.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
-			if tplayer.position.x == entityBobClassPlayer3.position.x and tplayer.position.y == entityBobClassPlayer3.position.y then
-				player = tplayer
-				-- player.print("found")
-			end
-		end
-		local temp = "tank_"..player.name
-		tank = global[temp]
-		if tank ~= nil then
-			if tank.valid ~= false then
-				-- player.print("Teleporting to tank")
-				player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer3.position.x,entityBobClassPlayer3.position.y}}
-				-- player.teleport(tank.position)
-				tank.set_driver(player.character)
-				tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
-				-- tankOpenGui(player)
-			else
-				global[temp] = nil
-				player.insert{name="tank-recall-token", count=1}
-				player.print({"tanks-notify.failed-teleport1"})
-			end
-		else
-			player.insert{name="tank-recall-token", count=1}
-			player.print({"tanks-notify.failed-teleport1"})
-		end
-	else
-		-- game.players[1].print("Looking in tanks")
-		for c, tplayer in pairs(game.players) do      
-			if tplayer.vehicle ~= nil then
-				-- game.players[1].print("Looking found player in tank")
-				if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
-					player = tplayer
+			if entityBobClassPlayer3 ~= nil then
+				-- entityBobClassPlayer3 = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
+				for c, tplayer in pairs(game.players) do
+					-- game.players[1].print("Looking x".. entityBobClassPlayer3.position.x .." y ".. entityBobClassPlayer3.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
+					if tplayer.position.x == entityBobClassPlayer3.position.x and tplayer.position.y == entityBobClassPlayer3.position.y then
+						player = tplayer
+						-- player.print("found")
+					end
+				end
+				local temp = "tank_"..player.name
+				tank = global[temp]
+				if tank ~= nil then
+					if tank.valid ~= false then
+						-- player.print("Teleporting to tank")
+						player.surface.create_entity{name="teleport-effect", position={entityBobClassPlayer3.position.x,entityBobClassPlayer3.position.y}}
+						-- player.teleport(tank.position)
+						tank.set_driver(player.character)
+						tank.surface.create_entity{name="teleport-effect", position={tank.position.x,tank.position.y}}
+						-- tankOpenGui(player)
+					else
+						global[temp] = nil
+						player.insert{name="tank-recall-token", count=1}
+						player.print({"tanks-notify.failed-teleport1"})
+					end
+				else
 					player.insert{name="tank-recall-token", count=1}
-					player.print({"tanks-notify.failed-teleport2"})
+					player.print({"tanks-notify.failed-teleport1"})
+				end
+			else
+				-- game.players[1].print("Looking in tanks")
+				for c, tplayer in pairs(game.players) do      
+					if tplayer.vehicle ~= nil then
+						-- game.players[1].print("Looking found player in tank")
+						if tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y then
+							player = tplayer
+							player.insert{name="tank-recall-token", count=1}
+							player.print({"tanks-notify.failed-teleport2"})
+						end
+					end
 				end
 			end
 		end

@@ -1,6 +1,6 @@
 --equipment
 if mods["ShinyBobGFX"] then
-	if settings.startup["add-powerbars"].value == true then
+	if settings.startup["add-powerbars"] and settings.startup["add-powerbars"].value == true then
 		--energy-shield-equipment
 		if data.raw["item"]["energy-shield-equipment"] then
 			data.raw["item"]["energy-shield-equipment"].icons = { { icon = "__morebobs__/graphics/moreshiny/icons/equipment/energy-shield-mk1-equipment.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-1.png" } }

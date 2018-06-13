@@ -1,5 +1,5 @@
 --bobsDeadlockStackCrate
-if settings.startup["enable-bobsDeadlockStackCrate"].value == true then
+if settings.startup["enable-bobsDeadlockStackCrate"] and settings.startup["enable-bobsDeadlockStackCrate"].value == true then
 	if mods["DeadlockCrating"] then
 		--Add Technologies
 		data:extend({
@@ -55,7 +55,7 @@ if settings.startup["enable-bobsDeadlockStackCrate"].value == true then
 end
 
 --tuonelatweaks
-if settings.startup["enable-tuonelatweaks"].value == true then
+if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonelatweaks"].value == true then
 	--Warehouse
 	if mods["Warehousing"] and BI then
 		if mods["boblogistics"] then
@@ -226,6 +226,6 @@ if mods["angelsbioprocessing"] then
 end
 
 --MSB
-if settings.startup["enable-moreshinybobs"].value == true then
+if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then
 	require('moreshinybobs/moreshinybobs')
 end

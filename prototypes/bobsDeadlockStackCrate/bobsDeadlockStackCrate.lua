@@ -2,8 +2,8 @@
 if mods["DeadlockStacking"] then	
 	--Circuits Redux
 	if mods["ShinyBobGFX"] then
-		if settings.startup["replace-circuits"].value == true then
-			if settings.startup["moreshinybobs-gfx-circuit"].value == true then
+		if settings.startup["replace-circuits"] and settings.startup["replace-circuits"].value == true then
+			if settings.startup["moreshinybobs-gfx-circuit"] and settings.startup["moreshinybobs-gfx-circuit"].value == true then
 				if data.raw["item"]["advanced-processing-unit"] then 
 					deadlock_stacking.create("advanced-processing-unit", "__morebobs__/graphics/icons/stacking/stacked-advanced-processing-unit.png", "deadlock-stacking-4", 32)
 				end
@@ -33,7 +33,7 @@ if mods["DeadlockStacking"] then
 				data.raw["recipe"]["deadlock-stacks-unstack-processing-unit"].icons = { { icon = "__morebobs__/graphics/icons/stacking/Shinybobgfx/stacked-electronic-logic-board-u.png" } }
 			end
 		else
-			if settings.startup["moreshinybobs-gfx-circuit"].value == true then
+			if settings.startup["moreshinybobs-gfx-circuit"] and settings.startup["moreshinybobs-gfx-circuit"].value == true then
 				if data.raw["item"]["advanced-processing-unit"] then 
 					deadlock_stacking.create("advanced-processing-unit", "__morebobs__/graphics/icons/stacking/stacked-advanced-processing-unit.png", "deadlock-stacking-4", 32)
 				end
@@ -70,7 +70,7 @@ if mods["DeadlockStacking"] then
 			end
 		end
 	else
-		if settings.startup["moreshinybobs-gfx-circuit"].value == true then
+		if settings.startup["moreshinybobs-gfx-circuit"] and settings.startup["moreshinybobs-gfx-circuit"].value == true then
 			if data.raw["item"]["advanced-processing-unit"] then 
 				deadlock_stacking.create("advanced-processing-unit", "__morebobs__/graphics/icons/stacking/stacked-advanced-processing-unit.png", "deadlock-stacking-4", 32)
 			end
@@ -108,7 +108,7 @@ if mods["DeadlockStacking"] then
 	end
 
 	--Realistic Ores
-	if settings.startup["moreshinybobs-gfx-ores"].value == true then
+	if settings.startup["moreshinybobs-gfx-ores"] and settings.startup["moreshinybobs-gfx-ores"].value == true then
 		if mods["RealisticOres"] then
 			data.raw["item"]["deadlock-stack-copper-ore"].icons = { { icon = "__morebobs__/graphics/icons/stacking/ores/real/re-copper-ore.png" } }
 			data.raw["item"]["deadlock-stack-iron-ore"].icons = { { icon = "__morebobs__/graphics/icons/stacking/ores/real/re-iron-ore.png" } }
@@ -128,8 +128,8 @@ if mods["DeadlockCrating"] then
 	--Assembly Redux
 	if mods["bobassembly"] then
 		if mods["ShinyBobGFX"] then
-			if settings.startup["replace-assemblycolors"].value == true then
-				if settings.startup["add-powerbars"].value == true then
+			if settings.startup["replace-assemblycolors"] and settings.startup["replace-assemblycolors"].value == true then
+				if settings.startup["add-powerbars"] and settings.startup["add-powerbars"].value == true then
 					data.raw["item"]["deadlock-machine-packer-item-1"].icons = { { icon = "__morebobs__/graphics/icons/stacking/crate-machine-1B.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-0.png" } }
 					data.raw["item"]["deadlock-machine-packer-item-2"].icons = { { icon = "__morebobs__/graphics/icons/stacking/crate-machine-2B.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-1.png" } }
 					data.raw["item"]["deadlock-machine-packer-item-3"].icons = { { icon = "__morebobs__/graphics/icons/stacking/crate-machine-3B.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-2.png" } }
@@ -145,7 +145,7 @@ if mods["DeadlockCrating"] then
 					data.raw["assembling-machine"]["deadlock-machine-packer-entity-3"].icons = { { icon = "__morebobs__/graphics/icons/stacking/crate-machine-3B.png" } }
 				end
 			else
-				if settings.startup["add-powerbars"].value == true then
+				if settings.startup["add-powerbars"] and settings.startup["add-powerbars"].value == true then
 					data.raw["item"]["deadlock-machine-packer-item-1"].icons = { { icon = "__DeadlockCrating__/graphics/crate-machine-1.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-0.png" } }
 					data.raw["item"]["deadlock-machine-packer-item-2"].icons = { { icon = "__DeadlockCrating__/graphics/crate-machine-2.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-1.png" } }
 					data.raw["item"]["deadlock-machine-packer-item-3"].icons = { { icon = "__DeadlockCrating__/graphics/crate-machine-3.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-2.png" } }

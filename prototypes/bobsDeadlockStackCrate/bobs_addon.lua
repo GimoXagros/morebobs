@@ -213,7 +213,7 @@ if mods["DeadlockStacking"] then
 	end
 	
 	--Bobs battery
-	if settings.startup["moreshinybobs-gfx-intermediates"].value == true then
+	if settings.startup["moreshinybobs-gfx-intermediates"] and settings.startup["moreshinybobs-gfx-intermediates"].value == true then
 		if data.raw["item"]["lithium-ion-battery"] then 
 			deadlock_stacking.create("lithium-ion-battery", "__morebobs__/graphics/icons/stacking/battery/lithium-ion-batteryR.png", "deadlock-stacking-3", 32)
 		end

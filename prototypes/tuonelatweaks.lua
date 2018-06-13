@@ -166,7 +166,7 @@ if data.raw["technology"]["iron-walls"] then
 end
 
 if data.raw["technology"]["steel-walls"] then
-	if mods["bobwarfare"] and settings.startup["enable-tanks_for_bob"].value == true then
+	if mods["bobwarfare"] and settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
 		data.raw["technology"]["steel-walls"].prerequisites = {"iron-walls", "reinforced-wall"}
 		if data.raw["recipe"]["steel-wall"].normal then data.raw["recipe"]["steel-wall"].normal.ingredients =
 			{
@@ -388,7 +388,7 @@ if mods["aai-industry"] then
 		data.raw["recipe"]["basic-transport-belt"].ingredients = { {"iron-gear-wheel", 1}, {"motor", 1} }
 		data.raw["recipe"]["transport-belt"].normal.ingredients = { {"iron-plate", 2}, {"motor", 2} }
 		data.raw["recipe"]["transport-belt"].expensive.ingredients = { {"iron-plate", 4}, {"motor", 2} }
-		if settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
+		if settings.startup["bobmods-logistics-beltrequireprevious"] and settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
 			bobmods.lib.recipe.add_ingredient("transport-belt", {"basic-transport-belt", 1})
 		end
 		if data.raw.item["tin-plate"] then
@@ -410,7 +410,7 @@ if mods["RubberBelts"] then
 				end
 			end
 		else
-			if settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
+			if settings.startup["bobmods-logistics-beltrequireprevious"] and settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
 				bobmods.lib.recipe.add_ingredient("transport-belt", {"basic-transport-belt", 1})
 			end
 		end
@@ -421,7 +421,7 @@ if mods["RubberBelts"] then
 		end
 	end
 else
-	if settings.startup["tuonelatweaks-rubberbelt"].value == true then
+	if settings.startup["tuonelatweaks-rubberbelt"] and settings.startup["tuonelatweaks-rubberbelt"].value == true then
 		if data.raw["recipe"]["basic-transport-belt"] then
 			data:extend({
 				{
@@ -452,7 +452,7 @@ else
 			if mods["aai-industry"] then
 				bobmods.lib.recipe.replace_ingredient("basic-transport-belt", "motor", "rubber")
 			else
-				if settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
+				if settings.startup["bobmods-logistics-beltrequireprevious"] and settings.startup["bobmods-logistics-beltrequireprevious"].value == true then
 					bobmods.lib.recipe.add_ingredient("transport-belt", {"basic-transport-belt", 1})
 				end
 			end

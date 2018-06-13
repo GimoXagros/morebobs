@@ -18,7 +18,7 @@ end
 ]]--
 
 if mods["bobvehicleequipment"] then
-	if settings.startup["bobmods-vehicleequipment-enablevehiclegrids"].value == true then
+	if settings.startup["bobmods-vehicleequipment-enablevehiclegrids"] and settings.startup["bobmods-vehicleequipment-enablevehiclegrids"].value == true then
 		data.raw["car"]["flame-tank"].equipment_grid = "bob-car"
 		data.raw["car"]["auto-tank"].equipment_grid = "bob-tank"
 		data.raw["car"]["nade-tank"].equipment_grid = "bob-car"

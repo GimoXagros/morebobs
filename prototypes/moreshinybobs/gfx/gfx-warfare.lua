@@ -445,7 +445,7 @@ if not mods["ShinyBobGFX"] then
 		data.raw["ammo"]["distractor-artillery-shell"].icon_size = 32
 	end
 else
-	if settings.startup["add-powerbars"].value == true then
+	if settings.startup["add-powerbars"] and settings.startup["add-powerbars"].value == true then
 		if mods["Bio_Industries"] then
 			if data.raw["item"]["bi-bio-cannon-area"] then
 				data.raw["item"]["bi-bio-cannon-area"].icons = { { icon = "__Bio_Industries__/graphics/icons/biocannon_icon.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-0.png" } }

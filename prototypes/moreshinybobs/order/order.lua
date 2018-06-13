@@ -4,10 +4,6 @@
 if data.raw["item-group"]["logistics"] then
 	--chests
 	if data.raw["item-subgroup"]["shinychests1"] then
-		if data.raw["item"]["bi-large-wooden-chest"] then
-			data.raw["item"]["bi-large-wooden-chest"].subgroup = "shinychests1"
-			data.raw["item"]["bi-large-wooden-chest"].order = "a1-a[bi-large-wooden-chest]"
-		end
 		data:extend({
 		  {
 				type = "item-subgroup",
@@ -1330,8 +1326,16 @@ if data.raw["item-group"]["combat"] then
 			data.raw["item"]["tesla-turret"].subgroup = "shinyturrets1"
 			data.raw["item"]["tesla-turret"].order = "b3"
 		end
+		if data.raw["item"]["more-biters-seismic"] then
+			data.raw["item"]["more-biters-seismic"].subgroup = "shinyturrets1"
+			data.raw["item"]["more-biters-seismic"].order = "b4"
+		end
 	end
 	if data.raw["item-subgroup"]["shinyturrets2"] then
+		if data.raw["item"]["more-biters-sniper-turret"] then
+			data.raw["item"]["more-biters-sniper-turret"].subgroup = "shinyturrets2"
+			data.raw["item"]["more-biters-sniper-turret"].order = "b4"
+		end
 		if data.raw["item"]["bi-bio-cannon-area"] then
 			data.raw["item"]["bi-bio-cannon-area"].subgroup = "shinyturrets2"
 			data.raw["item"]["bi-bio-cannon-area"].order = "c0"
@@ -1737,11 +1741,11 @@ if mods["vtk-deep-core-mining"] then
 end
 
 --bioinderstries
-if settings.startup["moreshinybobs-order-bioinderstries"].value == true then
+if settings.startup["moreshinybobs-order-bioinderstries"] and settings.startup["moreshinybobs-order-bioinderstries"].value == true then
 	require("bioinderstries")
 end
 
 --endgamecombet
-if settings.startup["moreshinybobs-order-endgamecombet"].value == true then
+if settings.startup["moreshinybobs-order-endgamecombet"] and settings.startup["moreshinybobs-order-endgamecombet"].value == true then
 	require("endgamecombet")
 end

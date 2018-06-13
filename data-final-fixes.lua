@@ -1,4 +1,4 @@
-if settings.startup["enable-bobsflowcontrol"].value == true then
+if settings.startup["enable-bobsflowcontrol"] and settings.startup["enable-bobsflowcontrol"].value == true then
 	if mods["Flow Control"] then
 		if mods["boblogistics"] then
 			if mods["bobplates"] then
@@ -89,17 +89,12 @@ if settings.startup["enable-bobsflowcontrol"].value == true then
 	end
 end
 
-if settings.startup["enable-uequipmenttesla"].value == true then
+if settings.startup["enable-uequipmenttesla"] and settings.startup["enable-uequipmenttesla"].value == true then
 	require("prototypes.TeslaTurret.TeslaTurret_FF")
 end
 
-if settings.startup["enable-tuonelatweaks"].value == true then
+if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonelatweaks"].value == true then
 	require('prototypes/tuonelatweaks')
-	require('prototypes/tuonelaaddon')
-
-	if settings.startup["tuonelatweaks-mint"].value == true then
-		require('prototypes/tuonelamint')
-	end
 
 	if data.raw["recipe"]["bob-basic-greenhouse-cycle"] then data.raw["recipe"]["bob-basic-greenhouse-cycle"].main_product= "" end
 	if data.raw["recipe"]["bob-advanced-greenhouse-cycle"] then data.raw["recipe"]["bob-advanced-greenhouse-cycle"].main_product= "" end
@@ -118,7 +113,7 @@ if settings.startup["enable-tuonelatweaks"].value == true then
 	end
 end
 
-if settings.startup["enable-bioindustries"].value == true then
+if settings.startup["enable-bioindustries"] and settings.startup["enable-bioindustries"].value == true then
 	if bobmods then
 		if bobmods.greenhouse then
 			if BI then
@@ -217,11 +212,11 @@ if settings.startup["enable-bioindustries"].value == true then
 end
 
 --moreshinybobs
-if settings.startup["enable-moreshinybobs"].value == true then
+if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then
 	require('prototypes/moreshinybobs/moreshinybobs')
 end
 
 --bobsDeadlockStacking
-if settings.startup["enable-bobsDeadlockStackCrate"].value == true then
+if settings.startup["enable-bobsDeadlockStackCrate"] and settings.startup["enable-bobsDeadlockStackCrate"].value == true then
 	require('prototypes/bobsDeadlockStackCrate/bobsDeadlockStackCrate')	
 end

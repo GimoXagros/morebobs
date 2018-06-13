@@ -1,11 +1,14 @@
+tuonela_box_g_check = false
+if mods["EquipmentPlusPortableEngine"] then tuonela_box_g_check = true end
+
 require('prototypes/pipe-pictures')
 
-if settings.startup["enable-moreshinybobs"].value == true then
+if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then
 	require('prototypes/moreshinybobs/order/pole-order')
 end
 
-if settings.startup["enable-tuonelatweaks"].value == true then
-	if data.raw["technology"]["steel-walls"] and settings.startup["enable-tanks_for_bob"].value == true then
+if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonelatweaks"].value == true then
+	if data.raw["technology"]["steel-walls"] and settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
 		if mods["aai-industry"] then
 			data.raw["technology"]["steel-walls"].effects =
 			{
@@ -38,6 +41,6 @@ if settings.startup["enable-tuonelatweaks"].value == true then
 	end
 end
 
-if settings.startup["enable-tanks_for_bob"].value == true then
+if settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
 	require("prototypes.tanks_for_bob.tanks_data-updates")
 end

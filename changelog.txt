@@ -1,9 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.47
-Date: 2018-06-XX
+Date: 2018-06-13
   Changes:
+    - Updated mod (More Shinybobs! - Bio Industries compatibility improved
+    - Updated mod (More Shinybobs! - Bob Armor & Classes compatibility improved)
     - Updated mod (Flow control for Bob's pipes - Bio Industries compatibility improved)
-
+    - Updated mod (TUONELA - Market&Supply boxes)
+    - Updated mod (TUONELA - Survival frontier scenario)
+  Bugfixes:
+    - Fixed runtime the game error (Tanks! and now also for Bob!! - Tank teleporter)
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.46
 Date: 2018-06-01

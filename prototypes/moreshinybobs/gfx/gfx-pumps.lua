@@ -167,7 +167,7 @@ if data.raw["assembling-machine"]["void-pump"] then data.raw["assembling-machine
 
 --임시적 업데이트
 if mods["ShinyBobGFX"] then
-	if settings.startup["add-powerbars"].value == true then
+	if settings.startup["add-powerbars"] and settings.startup["add-powerbars"].value == true then
 		if data.raw["item"]["fluid-generator"] then
 			data.raw["item"]["fluid-generator"].icons = { { icon = "__bobpower__/graphics/icons/fluid-generator.png" }, { icon = "__ShinyBobGFX__/graphics/icons/num-1.png" } }
 		end

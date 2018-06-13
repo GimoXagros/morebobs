@@ -1,3 +1,7 @@
+if settings.startup["tuonelatweaks-mint"] and settings.startup["tuonelatweaks-mint"].value == true then
+	require "tu_market"
+end
+
 local reactor = {}
 
 TICKS_PER_UPDATE = settings.global["reactor-interface-tick-interval"].value
@@ -104,6 +108,11 @@ script.on_event(defines.events.on_entity_died, function(event)
   if event.entity.name == REACTOR_ENTITY_NAME then
     remove_interface(event.entity)
   end
+
+	if settings.startup["tuonelatweaks-mint"] and settings.startup["tuonelatweaks-mint"].value == true then
+		-- get shops
+		market_spawning(event)
+	end
 end)
 
 function update(index)

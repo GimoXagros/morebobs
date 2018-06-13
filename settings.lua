@@ -242,15 +242,22 @@ data:extend(
 		type = "bool-setting",
 		name = "tuonelatweaks-mint",
 		setting_type = "startup",
-		default_value = false,
+		default_value = true,
 		order = "f[tuonelatweaks]-a[mint]"
+	},
+	{
+		type = "bool-setting",
+		name = "start-with-supply-box-b",
+		setting_type = "startup",
+		default_value = true,
+		order = "f[tuonelatweaks]-a[supply-box]"
 	},
 	{
 		type = "bool-setting",
 		name = "tuonelatweaks-rubberbelt",
 		setting_type = "startup",
 		default_value = false,
-		order = "f[tuonelatweaks]-b[rubberbelt]"
+		order = "f[tuonelatweaks]-c[rubberbelt]"
 	},
 	{
 		type = "bool-setting",

@@ -1,9 +1,9 @@
 --More Shinybobs!
-if settings.startup["moreshinybobs-order"].value == true then
+if settings.startup["moreshinybobs-order"] and settings.startup["moreshinybobs-order"].value == true then
 	require("order/order")
 end
 
-if settings.startup["moreshinybobs-item-group"].value == true then
+if settings.startup["moreshinybobs-item-group"] and settings.startup["moreshinybobs-item-group"].value == true then
 	require("gfx/item-group")
 end
 

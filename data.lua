@@ -1,11 +1,20 @@
-if settings.startup["enable-tuonelatweaks"].value == true then
+if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then
+	moreshinybobs_enable = true
+else
+	moreshinybobs_enable = false
+end
+if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonelatweaks"].value == true then
 	if not tuonela then tuonela = {} end
-	if settings.startup["enable-tanks_for_bob"].value == true then
+	if settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
 		require("prototypes.steel-wall")
+		require('prototypes/tuonelaaddon')
+	end
+	if settings.startup["tuonelatweaks-mint"] and settings.startup["tuonelatweaks-mint"].value == true then
+		require('prototypes/tuonelamint')
 	end
 end
 
-if settings.startup["enable-uequipmenttesla"].value == true then
+if settings.startup["enable-uequipmenttesla"] and settings.startup["enable-uequipmenttesla"].value == true then
 	require("prototypes.useful_equipment.equipment")
 	require("prototypes.useful_equipment.item")
 	require("prototypes.useful_equipment.recipe")
@@ -13,11 +22,11 @@ if settings.startup["enable-uequipmenttesla"].value == true then
 	require("prototypes.TeslaTurret.TeslaTurret")
 end
 
-if settings.startup["enable-reactorplus"].value == true then
+if settings.startup["enable-reactorplus"] and settings.startup["enable-reactorplus"].value == true then
 	require("prototypes.reactorinterface")
 end
 
-if settings.startup["enable-bioindustries"].value == true then
+if settings.startup["enable-bioindustries"] and settings.startup["enable-bioindustries"].value == true then
 	if data.raw["item"]["stone-crushed"] then data.raw["item"]["stone-crushed"].stack_size = 400 end
 	if data.raw["item"]["bi-woodpulp"] then data.raw["item"]["bi-woodpulp"].stack_size = 400 end
 	if data.raw["ammo-turret"]["bi-arboretum-area"] then
@@ -33,7 +42,7 @@ if settings.startup["enable-bioindustries"].value == true then
 	end
 end
 
-if settings.startup["enable-bobsweaponSoundsRedone"].value == true then
+if settings.startup["enable-bobsweaponSoundsRedone"] and settings.startup["enable-bobsweaponSoundsRedone"].value == true then
 	if mods["bobwarfare"] then
 		if mods["weaponSoundsRedone"] then
 			if data.raw.gun["gatling-gun"].attack_parameters.sound then
@@ -58,7 +67,7 @@ if settings.startup["enable-bobsweaponSoundsRedone"].value == true then
 				}
 			end
 
-			if settings.startup["wsr-replace-turret-sound"].value then
+			if settings.startup["wsr-replace-turret-sound"] and settings.startup["wsr-replace-turret-sound"].value then
 				for i=2,5 do
 					data.raw["ammo-turret"]["bob-gun-turret-"..i].attack_parameters.sound =
 					{
@@ -109,7 +118,7 @@ if settings.startup["enable-bobsweaponSoundsRedone"].value == true then
 	end
 end
 
-if settings.startup["enable-tanks_for_bob"].value == true then
+if settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
 	require("prototypes.tanks_for_bob.tanks_data")
 end
 
