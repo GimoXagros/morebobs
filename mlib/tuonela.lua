@@ -53,11 +53,11 @@ function on_supply_box_open_black(player_index)
 	local box_chance_1 = math.random(0,100)
 	local box_chance_2 = math.random(0,100)
 	local box_chance_3 = math.random(0,100)
-	local box_generator = "solar-panel-equipment"
-	local box_generator_cnt = 4
-	if tuonela_box_g_check == true then
-		box_generator = "portable-engine-equipment"
-		box_generator_cnt = 1
+	local	box_generator = "portable-engine-equipment"
+	local box_generator_cnt = 1
+	if not player.force.recipes["portable-engine-equipment"] then
+		box_generator = "solar-panel-equipment"
+		box_generator_cnt = 4
 	end
 	
 	if box_chance_1 <= 0 then

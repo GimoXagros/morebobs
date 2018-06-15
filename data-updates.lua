@@ -1,6 +1,3 @@
-tuonela_box_g_check = false
-if mods["EquipmentPlusPortableEngine"] then tuonela_box_g_check = true end
-
 require('prototypes/pipe-pictures')
 
 if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then

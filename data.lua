@@ -1,8 +1,3 @@
-if settings.startup["enable-moreshinybobs"] and settings.startup["enable-moreshinybobs"].value == true then
-	moreshinybobs_enable = true
-else
-	moreshinybobs_enable = false
-end
 if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonelatweaks"].value == true then
 	if not tuonela then tuonela = {} end
 	if settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then

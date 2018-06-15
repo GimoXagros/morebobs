@@ -64,3 +64,22 @@ function set_spectator(player)
 	end
 	player.set_controller{type = defines.controllers.ghost}
 end
+
+function mb_team_generator(name, pox, poy)
+	game.create_force(name)
+	game.forces[name].set_spawn_position({x = pox, y = poy}, game.surfaces[1])
+	game.forces["enemy"].set_friend(name, false)
+end
+
+function mb_friendly_setting_team(name, target)
+	game.forces[name].friendly_fire = false
+	game.forces[target].set_friend(name, true)
+	game.forces[target].set_cease_fire(name, true)
+	game.forces[name].set_friend(target, true)
+	game.forces[name].set_cease_fire(target, true)
+end
+
+function mb_alliance_settings(name, target)
+	game.forces[name].set_friend(target, true)
+	game.forces[name].set_cease_fire(target, false)
+end

@@ -7,18 +7,22 @@ local version = 1
 script.on_event(defines.events.on_player_created, function(event)
   local player = game.players[event.player_index]
 	
-	if event.player_index%2 == 0 then
-		player.force = game.forces["alpha"]
-	else
-		player.force = game.forces["bravo"]
-	end
+	-- if event.player_index%4 == 1 then
+		-- player.force = game.forces["alpha"]
+	-- elseif event.player_index%4 == 2 then
+		-- player.force = game.forces["bravo"]
+	-- elseif event.player_index%4 == 3 then
+		-- player.force = game.forces["charlie"]
+	-- elseif event.player_index%4 == 0 then
+		-- player.force = game.forces["delta"]
+	-- end
 	
   player.insert{name="iron-plate", count = 8}
   player.insert{name="pistol", count = 1}
   player.insert{name="firearm-magazine", count = 10}
   player.insert{name="burner-mining-drill", count = 1}
   player.insert{name="stone-furnace", count = 1}
-	if BI then
+	if player.force.recipes["bi_recipe_dart_turret"] then
 		player.insert{name="bi-dart-turret", count = 10}
 		player.insert{name="bi-enhanced-dart-magazine", count = 1000}
 	end
@@ -65,32 +69,32 @@ script.on_init(function()
 	--forces options
 	game.forces["player"].friendly_fire = false
 
-	game.create_force("alpha")
-	game.forces["alpha"].set_spawn_position({x = 0, y = 500}, game.surfaces[1])
+	mb_team_generator("alpha", 0, 250)
+	mb_team_generator("bravo", 0, 500)
+	mb_team_generator("charlie", 0, -250)
+	mb_team_generator("delta", 0, -500)
+
+	mb_friendly_setting_team("alpha", "player")
+	mb_friendly_setting_team("bravo", "player")
+	mb_friendly_setting_team("charlie", "player")
+	mb_friendly_setting_team("delta", "player")
+
+	mb_alliance_settings("alpha", "bravo")
+	mb_alliance_settings("alpha", "charlie")
+	mb_alliance_settings("alpha", "delta")
+
+	mb_alliance_settings("bravo", "alpha")
+	mb_alliance_settings("bravo", "charlie")
+	mb_alliance_settings("bravo", "delta")
+
+	mb_alliance_settings("charlie", "alpha")
+	mb_alliance_settings("charlie", "bravo")
+	mb_alliance_settings("charlie", "delta")
 	
-	game.forces["alpha"].friendly_fire = false
-	game.forces["player"].set_friend("alpha", true)
-	game.forces["player"].set_cease_fire("alpha", true)
-	game.forces["alpha"].set_friend("player", true)
-	game.forces["alpha"].set_cease_fire("player", true)
-
-	game.create_force("bravo")
-	game.forces["bravo"].set_spawn_position({x = 0, y = -500}, game.surfaces[1])
-
-	game.forces["bravo"].friendly_fire = false
-	game.forces["player"].set_friend("bravo", true)
-	game.forces["player"].set_cease_fire("bravo", true)
-	game.forces["bravo"].set_friend("player", true)
-	game.forces["bravo"].set_cease_fire("player", true)
-
-	game.forces["alpha"].set_friend("bravo", true)
-	game.forces["bravo"].set_friend("alpha", true)
-	game.forces["alpha"].set_cease_fire("bravo", false)
-	game.forces["bravo"].set_cease_fire("alpha", false)
+	mb_alliance_settings("delta", "alpha")
+	mb_alliance_settings("delta", "bravo")
+	mb_alliance_settings("delta", "charlie")
 	
-	game.forces["enemy"].set_friend("alpha", false)
-	game.forces["enemy"].set_friend("bravo", false)
-
   silo_script.on_init()
   Init_death_count()
 end)
