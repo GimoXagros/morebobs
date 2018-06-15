@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.16.48
+Date: 2018-06-15
+  Changes:
+    - Updated mod (TUONELA - Survival frontier scenario)
+  Bugfixes:
+    - Fixed launch the game error (TUONELA - AAI Industries)
+---------------------------------------------------------------------------------------------------
 Version: 0.16.47
 Date: 2018-06-13
   Changes:

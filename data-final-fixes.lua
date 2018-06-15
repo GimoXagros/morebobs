@@ -111,6 +111,18 @@ if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonela
 		if data.raw["recipe"]["lighted-big-electric-pole"] then table.insert(data.raw["technology"]["electric-energy-distribution-1"].effects,{type="unlock-recipe",recipe="lighted-big-electric-pole"}) end
 		if data.raw["recipe"]["lighted-substation"] then table.insert(data.raw["technology"]["electric-energy-distribution-2"].effects,{type="unlock-recipe",recipe="lighted-substation"}) end
 	end
+	
+	--Mint
+	if aai_industry == true then
+		table.insert(data.raw["recipe"]["burner-mint"].normal.ingredients,{"motor", 1})
+		table.insert(data.raw["recipe"]["burner-mint"].expensive.ingredients,{"motor", 3})
+		table.insert(data.raw["recipe"]["electric-mint"].normal.ingredients,{"electric-motor", 1})
+		table.insert(data.raw["recipe"]["electric-mint"].expensive.ingredients,{"electric-motor", 3})
+		table.insert(data.raw["technology"]["electricity"].effects,{type="unlock-recipe",recipe="electric-mint"})
+	else
+		data.raw["recipe"]["electric-mint"].normal.enabled = true
+		data.raw["recipe"]["electric-mint"].expensive.enabled = true
+	end
 end
 
 if settings.startup["enable-bioindustries"] and settings.startup["enable-bioindustries"].value == true then
