@@ -39,6 +39,19 @@ if settings.startup["enable-tuonelatweaks"] and settings.startup["enable-tuonela
 			}
 		end
 	end
+	if settings.startup["tuonelatweaks-mint"] and settings.startup["tuonelatweaks-mint"].value == true then
+		--Mint
+		if aai_industry == true then
+			table.insert(data.raw["recipe"]["burner-mint"].normal.ingredients,{"motor", 1})
+			table.insert(data.raw["recipe"]["burner-mint"].expensive.ingredients,{"motor", 3})
+			table.insert(data.raw["recipe"]["electric-mint"].normal.ingredients,{"electric-motor", 1})
+			table.insert(data.raw["recipe"]["electric-mint"].expensive.ingredients,{"electric-motor", 3})
+			table.insert(data.raw["technology"]["electricity"].effects,{type="unlock-recipe",recipe="electric-mint"})
+		else
+			data.raw["recipe"]["electric-mint"].normal.enabled = true
+			data.raw["recipe"]["electric-mint"].expensive.enabled = true
+		end
+	end
 end
 
 if settings.startup["enable-tanks_for_bob"] and settings.startup["enable-tanks_for_bob"].value == true then
