@@ -1,0 +1,10 @@
+{
+	"name": "morebobs",
+	"version": "0.16.51",
+	"title": "More Bobs!",
+	"author": "Xagros",
+	"homepage": "https://mods.factorio.com/user/xagros",
+	"description": "Extends additional add-ons for all of the Bob's mod",
+	"factorio_version": "0.16",
+	"dependencies": [ "base", "boblibrary" ]
+}

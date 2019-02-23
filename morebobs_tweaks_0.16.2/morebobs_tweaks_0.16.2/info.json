@@ -1,0 +1,10 @@
+{
+	"name": "morebobs_tweaks",
+	"version": "0.16.2",
+	"title": "More Bobs!: Tweaks",
+	"author": "Xagros",
+	"homepage": "https://mods.factorio.com/user/xagros",
+	"description": "This is a compatibility tweak for a more comfortable Bob's mods.",
+	"factorio_version": "0.16",
+	"dependencies": [ "base", "morebobs", "? weaponSoundsRedone", "? Bio_Industries", "? robotMiningSite", "? aai-industry", "? angelsrefining", "? angelsbioprocessing", "? beltSorter", "? Warehousing", "? KS_Power", "? kry-inserters"]
+}

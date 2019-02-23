@@ -1,0 +1,10 @@
+{
+	"name": "morebobs_bobsStackCrate",
+	"version": "0.16.0",
+	"title": "More Bobs!: Deadlock's Stack & Crate",
+	"author": "Xagros",
+	"homepage": "https://mods.factorio.com/user/xagros",
+	"description": "Adds recipes for stacking & crating from Bob's mods.",
+	"factorio_version": "0.16",
+	"dependencies": [ "base", "morebobs", "? DeadlockStacking", "? DeadlockCrating", "? aai-industry", "? angelssmelting", "? bobplates", "? KaoExtended", "? Bio_Industries"]
+}

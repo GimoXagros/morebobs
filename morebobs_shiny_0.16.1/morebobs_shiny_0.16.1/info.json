@@ -1,0 +1,10 @@
+{
+	"name": "morebobs_shiny",
+	"version": "0.16.1",
+	"title": "More Bobs!: Shiny bobs",
+	"author": "Xagros",
+	"homepage": "https://mods.factorio.com/user/xagros",
+	"description": "Graphics update for Bob's mods. Supports ShinyBobGFX and converts it to high resolution.",
+	"factorio_version": "0.16",
+	"dependencies": [ "base", "morebobs", "ShinyIcons", "? morebobs_tweaks", "? ShinyBobGFX","? LightedPolesPlus" ]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "morebobs_usefulsomething",
+	"version": "0.16.0",
+	"title": "More Bobs!: Useful Something",
+	"author": "Xagros",
+	"homepage": "https://mods.factorio.com/user/xagros",
+	"description": "This is an additional item for a more comfortable Bob's mods.",
+	"factorio_version": "0.16",
+	"dependencies": [ "base", "morebobs", "? Robocharger", "? Induction Charging", "? bobplates"]
+}
